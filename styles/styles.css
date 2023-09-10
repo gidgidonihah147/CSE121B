@@ -1,0 +1,107 @@
+html{
+    background-color: rgb(105, 105, 248);
+  }
+  header{
+    border: 2px solid white;
+    background: rgb(218, 218, 57);
+    text-align: center;
+  }
+  header  li {
+    list-style: none;
+  }
+  body{
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    color: aliceblue;
+    font-size: larger;
+    background-color: black;
+  }
+  li{
+    padding: 5px;
+  }
+  ul {
+    border: 2px solid white;
+    margin: 1em;
+  }
+  a:link, a:hover, a:active, a:visited {
+    color: white;
+  }
+  main{
+    border: 2px solid white;
+  }
+  footer{
+    border: 2px solid white;
+    background: black;
+  }
+ul p.note {
+  border: 2px solid yellow;
+  padding: 1em;
+  text-align: center;
+}
+  article {
+    width: 90%;
+    margin: auto;
+    border: 2px solid rgb(105, 105, 248);
+    margin-top: 1em;
+  }
+/* Remove default bullets */
+ul, #myUL {
+  list-style-type: none;
+}
+
+/* Remove margins and padding from the parent ul */
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the caret/arrow */
+.caret {
+  cursor: pointer;
+  user-select: none; /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+  content: "\25B6";
+  color: white;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+  transform: rotate(90deg);
+}
+
+/* Hide the nested list */
+.nested {
+  display: none;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+  display: block;
+  text-align: left; 
+  padding: 1em;
+}
+  @media only screen and (min-width:786px){
+    body{
+      max-width: 90%;
+      margin: auto;
+      text-align: center;
+      color: aliceblue;
+      font-size: large;
+    }
+    form {
+      text-align-last: center;
+    }
+  }
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;            /* Footer height */
+}
