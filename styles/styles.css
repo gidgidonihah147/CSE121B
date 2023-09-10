@@ -86,8 +86,22 @@ ul, #myUL {
   text-align: left; 
   padding: 1em;
 }
+footer{
+  position: absolute;
+  max-width: 100%;
+  width: 100%;
+  bottom: 0;
+  height: 3rem;            /* Footer height */
+}
   @media only screen and (min-width:786px){
     body{
+      max-width: 90%;
+      margin: auto;
+      text-align: center;
+      color: aliceblue;
+      font-size: large;
+    }
+    footer{
       max-width: 90%;
       margin: auto;
       text-align: center;
@@ -99,9 +113,3 @@ ul, #myUL {
     }
   }
 
-footer{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 3rem;            /* Footer height */
-}
