@@ -8,7 +8,7 @@ let fullName = "Tristin Parker";
 //2.2 Declare and instantiate a variable to hold the current year. Identify the variable as "currentYear".
 const currentYear = "2023";
 //2.3 Declare and instantiate a variable to hold the file path (location) and file name of the image that you placed in the images folder as a string. Identify the variable as "profilePicture".
-let profilePicture = "images/Personal image.jpeg";
+let profilePicture = "images/PersonalImage.jpeg";
 //4.5 Use the setAttribute method to set the alt property of the image element and set its value to equal 'Profile image of [Insert Name Variable]' where the name variable comes from Step 2. Always use a template literal to create the string.
 let profileAlt = `Profile name of ${fullName}`;
 
