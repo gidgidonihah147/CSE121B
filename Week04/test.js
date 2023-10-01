@@ -1,3 +1,5 @@
+//Test JS to test my W04 Learning Activities question 1 code. Linked to button on Index-old.html for verification
+
 function test() {
     let esomeprazole = {
         'id': 'mnb78932',
