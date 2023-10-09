@@ -112,9 +112,6 @@ div #buttons {
   border: none;
 }
 
-#addToCollection {
-  width: 100%;
-}
 
 .divider {
   border-bottom: 2px solid var(--primary-color);
@@ -177,25 +174,6 @@ nav {
   margin: 0.5em 0;
 }
 
-.card__director {
-  font-size: var(--small-font);
-}
-
-.card__title {
-  font-size: 1em;
-}
-
-/* End product list card */
-
-.product-detail {
-  padding: 1em;
-  max-width: 500px;
-  margin: auto;
-}
-
-.product-detail img {
-  width: 100%;
-}
 
 
 @media screen and (min-width: 500px) {
@@ -264,6 +242,9 @@ nav {
   .active {
     border-bottom: 1px solid yellow;
   }
+}
+.movie-detail {
+  width: 90%;
 }
 
 footer {
