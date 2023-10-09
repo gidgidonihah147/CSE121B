@@ -25,8 +25,33 @@ const movieTitle = getParams('movie');
 const titleCheck = movie.Title;
   if (titleCheck == undefined) {
     return `<section class='movie-detail'>
-    <h2> The movie "${movieTitle}" does not exist.</h2>
+    <h2> ERROR - The movie "${movieTitle}" does not exist</h2>
     <p>Please try searching for a different movie</p>
+    <section class="project">
+                <form action="/cse121b/Project/movie.html?">
+                    <input type="search" id="movieSearch" name="movie" placeholder="Search Movies Here" />
+                </form>
+            <p>Alternatively choose a genre and select a movie from the list I chose - </p>
+            <ul>
+                <li id="action">
+                    <a href="index.html?genre=action"> Action </a>
+                </li>
+                <li id="Horror">
+                    <a href="index.html?genre=horror"> Horror </a>
+                </li>
+                <li id="drama">
+                    <a href="index.html?genre=drama"> Drama </a>
+                </li>
+                <li id="fantasy">
+                    <a href="index.html?genre=fantasy"> Fantasy </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="products">
+            <h2><span class="title"></span></h2>
+            <ul class="product-list"></ul>
+        </section>
     </section>`
 } else{
 
