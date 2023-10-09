@@ -243,14 +243,22 @@ nav {
     border-bottom: 1px solid yellow;
   }
 }
+
 .movie-detail {
   width: 90%;
+  text-align: center;
+  border: none;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 90%;
 }
+
 .movie-detail div {
   border: 2px black solid;
   color: black;
   margin-bottom: 10px;
 }
+
 footer {
   font-size: var(--small-font);
   padding: 1em;
