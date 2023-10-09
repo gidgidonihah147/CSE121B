@@ -197,6 +197,11 @@
     .movie-details li {
       display: inline-block;
     }
+    #basic-info {
+      text-align: center;
+      border: none;
+      width: 90%;
+    }
   }
   
   footer {
