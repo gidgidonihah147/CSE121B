@@ -36,7 +36,7 @@ export default class MovieListing {
       this.genre = genre;
       this.dataSource = dataSource;
       this.listElement = listElement;
-      this.path = `/Project/json/${this.genre}.json`;
+      this.path = `/cse121b/Project/json/${this.genre}.json`;
     }
     getData() {
       return fetch(this.path)
