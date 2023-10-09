@@ -21,8 +21,8 @@ export default class MovieDetails {
 
 
 function movieTemplate(movie) {
-const movieTitle = getParams('movie');
-const titleCheck = movie.Title;
+  const movieTitle = getParams('movie');
+  const titleCheck = movie.Title;
   if (titleCheck == undefined) {
     return `<section class='movie-detail'>
     <h2> ERROR - The movie "${movieTitle}" does not exist</h2>
@@ -53,9 +53,9 @@ const titleCheck = movie.Title;
             <ul class="product-list"></ul>
         </section>
     </section>`
-} else{
+  } else {
 
-  return `<section class='movie-detail'>
+    return `<section class='movie-detail'>
     <h2>${movie.Title}</h2>
     <br>
     <br>
@@ -98,5 +98,5 @@ const titleCheck = movie.Title;
         </ul>
       </div>
     </section>`
-}
+  }
 }
