@@ -1,6 +1,7 @@
 import {
   qs,
   renderListWithTemplate,
+  getParams
 } from './utils.mjs';
 
 
@@ -20,6 +21,15 @@ export default class MovieDetails {
 
 
 function movieTemplate(movie) {
+const movieTitle = getParams('movie');
+console.log(movie.Response);
+  if (movie.Response = 'false') {
+    return `<section class='movie-detail'>
+    <h2> The movie ${movieTitle} does not exist.</h2>
+    <p>Please try searching for a different movie</p>
+    </section>`
+} else{
+
   return `<section class='movie-detail'>
     <h2>${movie.Title}</h2>
     <br>
@@ -63,4 +73,5 @@ function movieTemplate(movie) {
         </ul>
       </div>
     </section>`
+}
 }

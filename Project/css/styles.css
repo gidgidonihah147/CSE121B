@@ -243,7 +243,9 @@ nav {
   margin: auto;
   background-color: var(--tertiary-color);
 }
-
+.movie-detail img {
+  padding-bottom: 20px;
+}
 .movie-detail, #basic-info, #cast-crew {
   border: 2px black solid;
   color: black;
