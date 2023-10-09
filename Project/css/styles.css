@@ -197,6 +197,9 @@
     .movie-details li {
       display: inline-block;
     }
+    #movie-info {
+      width: 100%;
+    }
     #basic-info {
       text-align: center;
       border: none;
