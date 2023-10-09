@@ -191,10 +191,8 @@ nav {
   .movie-detail {
     width: 80%;
     margin: auto;
+    border: none;
   }
-
- 
-
   .movie-detail {
     padding-bottom: 10px;
     text-decoration: none;
@@ -207,7 +205,6 @@ nav {
   }
 
   .movie-detail div {
-    border: 2px black solid;
     color: black;
     margin-bottom: 10px;
   }
@@ -232,9 +229,6 @@ nav {
     width: 90%;
   }
 
-  li #basic-info {
-    border-right: 2px black solid;
-  }
 
   .active {
     border-bottom: 1px solid yellow;
