@@ -20,7 +20,8 @@
     margin: 0;
     font-family: var(--font-body);
     font-size: var(--font-base);
-    color:white;
+    color:black;
+    width: 100%;
   }
   img {
     max-width: 100%;
