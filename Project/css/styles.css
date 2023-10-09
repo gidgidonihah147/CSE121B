@@ -190,6 +190,13 @@
       font-size: inherit;
       grid-template-columns: 150px auto 15%;
     }
+    .movie-detail {
+      margin: auto;
+      width: 100%;
+    }
+    .movie-details li {
+      display: inline-block;
+    }
   }
   
   footer {
