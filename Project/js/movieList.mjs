@@ -19,7 +19,7 @@ function sortByProperty(property){
 }
 
 function movieCardTemplate(movie) {
-    return `<li class='movie-card'><a href='/Project/movie.html?movie=${movie.Title}'><img
+    return `<li class='movie-card'><a href='/cse121b/Project/movie.html?movie=${movie.Title}'><img
     src='${movie.Poster}'
     alt='Image of ${movie.Title}'
     <h3 class='card__director'>${movie.Director}</h3><h2 class='movie__name'>${movie.Title}</h2><p >${movie.Year}</p></a></li>
