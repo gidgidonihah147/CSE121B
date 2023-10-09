@@ -31,8 +31,6 @@ function movieCardTemplate(movie) {
 
 export default class MovieListing {
     constructor(genre, dataSource, listElement) {
-      // We passed in this information to make our class as reusable as possible.
-      // Being able to define these things when we use the class will make it very flexible
       this.genre = genre;
       this.dataSource = dataSource;
       this.listElement = listElement;
@@ -44,7 +42,6 @@ export default class MovieListing {
         .then((data) => data.sort(sortByProperty(sort)));
     }
     async init() {
-      // our dataSource will return a Promise...so we can use await to resolve it.
       const list = getLocalStorage(this.genre);
       const localJSON = await this.getData();
       this.renderLocalJson(list,localJSON);

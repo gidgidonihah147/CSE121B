@@ -1,7 +1,4 @@
-// BYUI/local Login
 const baseURL = 'https://www.omdbapi.com/?apikey=12fcf9e2&'
-//External Site login
-//const baseURL = 'https://wdd330-backend.onrender.com/'
 
 async function convertToJson(res) {
   const data = await res.json();
@@ -15,8 +12,8 @@ async function convertToJson(res) {
 
 export default class ExternalServices {
   constructor() {
-    // this.category = category;
-    // this.path = `../json/${this.category}.json`;
+    // this.genre = genre;
+    // this.path = `../json/${this.genre}.json`;
   }
   async init(){
       document.getElementById('movieSearch')

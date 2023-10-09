@@ -4,7 +4,6 @@ import { qs, getParams } from './utils.mjs';
 
 const genre = getParams('genre');
 
-// show the list of movies
 var movies = new MovieData(genre);
 console.log(movies);
 var listElement = qs('.product-list');

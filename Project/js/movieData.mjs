@@ -9,7 +9,6 @@ function sortByProperty(property){
   }  
 }
 
-//var sort = 'Rotten Tomatoes Rating';
 var sort = 'title';
 
 
@@ -24,8 +23,9 @@ function convertToJson(res) {
 
 export default class MovieData {
   constructor(genre) {
-    this.genre = genre;
+    //Initial json file I used was just movies.json before I split them between genre's
     //this.path = `../public/json/movies.json`;
+    this.genre = genre;
     this.path = `/json/${this.genre}.json`;
   }
   async getData() {

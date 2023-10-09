@@ -12,9 +12,7 @@ export default class MovieDetails {
   }
 
   async init() {
-    // use our datasource to get the details for the current movie. findmovieById will return a promise! use await or .then() to process it
     this.movie = await this.dataSource.findMovieByTitle(this.movieTitle);
-    // once we have the movie details we can render out the HTML
     renderListWithTemplate(movieTemplate, qs('main'), [this.movie])
   }
 }
