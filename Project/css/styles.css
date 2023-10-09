@@ -193,10 +193,7 @@ nav {
     margin: auto;
   }
 
-  .movie-detail h2 {
-    padding-top: 20px;
-    text-align: center;
-  }
+ 
 
   .movie-detail {
     padding-bottom: 10px;
@@ -248,15 +245,19 @@ nav {
   width: 90%;
   text-align: center;
   border: none;
-  display: inline-flex;
-  justify-content: space-between;
   width: 90%;
+  margin: auto;
+  background-color: var(--tertiary-color);
 }
 
-.movie-detail div {
+.movie-detail, #basic-info, #cast-crew {
   border: 2px black solid;
   color: black;
   margin-bottom: 10px;
+}
+.movie-detail h2 {
+  padding-top: 20px;
+  text-align: center;
 }
 
 footer {
