@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TParker | Project | CSE 121b</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <script src="./js/movie-listing.js" type="module"></script>
+
+</head>
+
+<body>
+    <nav>
+        <ul id="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="/Week01/w01-task.html">W1 Task</a></li>
+            <li><a href="/Week03/w03-task.html">W3 Task</a></li>
+            <li><a href="/Week04/w04-task.html">W4 Task</a></li>
+            <li><a href="/Week05/w05-task.html">W5 Task</a></li>
+            <li><a href="index.html" class="active">Project</a></li>
+        </ul>
+
+    </nav>
+    <main id="home">
+
+        <section class="project">
+            <span>
+                <p>There are so many great movies out there to be seen! Search a movie to find out some info on it!</p>
+                <form action="/Project/movie.html?">
+                    <input type="search" id="movieSearch" name="movie" placeholder="Search Movies Here" />
+                </form>
+            </span>
+            <p>Alternatively choose a genre and select a movie from the list I chose - </p>
+            <ul>
+                <li id="action">
+                    <a href="/Project/index.html?genre=action"> Action </a>
+                </li>
+                <li id="Horror">
+                    <a href="/Project/index.html?genre=horror"> Horror </a>
+                </li>
+                <li id="drama">
+                    <a href="/Project/index.html?genre=drama"> Drama </a>
+                </li>
+                <li id="fantasy">
+                    <a href="/Project/index.html?genre=fantasy"> Fantasy </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="products">
+            <h2><span class="title"></span></h2>
+            <ul class="product-list"></ul>
+        </section>
+    </main>
+    <footer>
+        &copy;<span id="year"></span> | Final Project | CSE 121b
+    </footer>
+</body>
+
+</html>
