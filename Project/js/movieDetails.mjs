@@ -22,10 +22,10 @@ export default class MovieDetails {
 
 function movieTemplate(movie) {
 const movieTitle = getParams('movie');
-console.log(movie.Response);
-  if (movie.Response = 'false') {
+const titleCheck = movie.Title;
+  if (titleCheck == undefined) {
     return `<section class='movie-detail'>
-    <h2> The movie ${movieTitle} does not exist.</h2>
+    <h2> The movie "${movieTitle}" does not exist.</h2>
     <p>Please try searching for a different movie</p>
     </section>`
 } else{
